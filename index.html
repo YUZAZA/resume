@@ -4,12 +4,23 @@
 <head>
 	<title>我 的 网 页 </title>
 	<link rel="stylesheet" href="./a.css">
-	<style>
+	<script src="//at.alicdn.com/t/font_1079664_smhey0ia3po.js"></script>
+	<style type="text/css">
+		.icon {
+		   width: 1em; height: 1em;
+		   vertical-align: -0.15em;
+		   fill: currentColor;
+		   overflow: hidden;
+		}
 	</style>
 </head>
 
 <body>
-	<div class="topNavBar clearfix">
+		<svg class="icon" aria-hidden="true">
+				<use xlink:href="#icon-jianshu"></use>
+			</svg>
+	<div class="topNavBar">
+	  <div class="topNavBar-inner clearfix">
 		<a class="logo" href="#" alt="logo" style="float:left;">
 			<span class="rs">RS</span><span class="card">card</span>
 		</a>
@@ -24,15 +35,21 @@
 				<li style="float: left;"><a href="#">其他</a></li>
 			</ul>
 		</nav>
+	  </div>
 	</div>
-	<div class="banner" style="background-image: url(#)"></div>
+	<div class="banner">
+		<div class="mask"></div>
+	</div>
 	<main>
-		<div class="card">
+		<div class="userCard">
+			<div class="pictureAndText clearfix">
 			<div class="picture">
-				<img src="" alt="头像">
+				<img src="./img/avatar.jpg" width=299 height=347 alt="头像">
 			</div>
 			<div class="text">
-				<span class="welcome">Hello</span>
+				<span class="welcome">Hello
+					<span class="triangle"></span>
+				</span>
 				<h1>赵 若 尧</h1>
 				<p>前 端 开 发</p>
 				<hr>
@@ -41,18 +58,24 @@
 					<dd>22</dd>
 					<dt>所在城市</dt>
 					<dd>上海</dd>
-					<dt>邮箱<dt>
-					<dd>zry.97@163.com<dd>
+					<dt>邮箱</dt>
+					<dd>zry.97@163.com</dd>
 				</dl>
 			</div>
+			</div>
 			<footer class="media">
-				<a href="#"><img src="#" alt="..."></a>
-				<a href="#"><img src="#" alt="..."></a>
-				<a href="#"><img src="#" alt="..."></a>
-				<a href="#"><img src="#" alt="..."></a>
-				<a href="#"><img src="#" alt="..."></a>
-				<a href="#"><img src="#" alt="..."></a>
-				<a href="#"><img src="#" alt="..."></a>
+					<a href="#">
+						<svg class="icon" aria-hidden="true">
+							<use xlink:href="#icon-jianshu"></use>
+						</svg></a>
+					<a href="#">
+						<svg class="icon" aria-hidden="true">
+							<use xlink:href="#icon-github"></use>
+						</svg></a>
+					<a href="#">
+						<svg class="icon" aria-hidden="true">
+							<use xlink:href="#icon-twitter"></use>
+						</svg></a>
 			</footer>
 		</div>
 
